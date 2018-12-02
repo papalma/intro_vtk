@@ -6,8 +6,8 @@ Feel free to contact me for suggestion or comments.
 [Patricio Palma](mailto:patriciop at gmail)
 
 ## Requirements
-* At least VTK v6.1 (tested with v8.1)
-* C++11 (tested with Clang v6.0)
+* At least VTK v6.1 (tested on v8.1)
+* C++11 (tested on Clang v6.0)
 * Make
 
 ## Building

@@ -29,6 +29,8 @@ lesson2: lesson2.o util.o
 
 lesson3: lesson3.o util.o
 
+util.o: util.cxx util.h
+
 .PHONY:
 clean:
 	rm -f *.o lesson1 lesson2 lesson3

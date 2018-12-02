@@ -1,9 +1,4 @@
 // Based in code presented at https://www.vtk.org/Wiki/VTK/Tutorials/TriangleGeometryVertices
-#include <vtkActor.h>
-#include <vtkCellArray.h>
-#include <vtkPoints.h>
-#include <vtkPolyData.h>
-#include <vtkPolyDataMapper.h>
 #include <vtkRenderer.h>
 #include <vtkRenderWindow.h>
 #include <vtkRenderWindowInteractor.h>
