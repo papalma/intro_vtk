@@ -1,17 +1,18 @@
 CPP = clang++
-INCDIR = -I $(VTKDIR)/include/vtk-8.1
+VTKVER = 8.1
+INCDIR = -I $(VTKDIR)/include/vtk-$(VTKVER)
 LIBDIR = -L $(VTKDIR)/lib
 VTKLIB = \
--l vtksys-8.1 \
--l vtkCommonCore-8.1 \
--l vtkCommonSystem-8.1 \
--l vtkCommonDataModel-8.1 \
--l vtkCommonExecutionModel-8.1 \
--l vtkRenderingCore-8.1 \
--l vtkRenderingOpenGL2-8.1 \
--l vtkFiltersCore-8.1 \
--l vtkFiltersSources-8.1 \
--l vtkInteractionStyle-8.1
+-l vtksys-$(VTKVER) \
+-l vtkCommonCore-$(VTKVER) \
+-l vtkCommonSystem-$(VTKVER) \
+-l vtkCommonDataModel-$(VTKVER) \
+-l vtkCommonExecutionModel-$(VTKVER) \
+-l vtkRenderingCore-$(VTKVER) \
+-l vtkRenderingOpenGL2-$(VTKVER) \
+-l vtkFiltersCore-$(VTKVER) \
+-l vtkFiltersSources-$(VTKVER) \
+-l vtkInteractionStyle-$(VTKVER)
 
 CPPFLAGS += -std=c++11 -Wall $(INCDIR) 
 LDFLAGS += -l stdc++ $(LIBDIR) $(VTKLIB) 
