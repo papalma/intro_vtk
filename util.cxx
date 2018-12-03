@@ -4,17 +4,19 @@
 #include <vtkRenderWindowInteractor.h>
 #include <vtkSmartPointer.h>
 
+// Check lesson1.cxx to know why this code is here and only here
 #include <vtkAutoInit.h>
 VTK_MODULE_INIT(vtkRenderingOpenGL2);   // init rendering module
 VTK_MODULE_INIT(vtkInteractionStyle);   // init interaction module
 
 void CreateWindow(vtkSmartPointer<vtkRenderer> renderer) {
     
-    renderer->SetBackground(.1, .2, .3);
+    renderer->SetBackground(.4, .4, 1.0);
 
     // Create and configure window and interactor
     auto window = vtkSmartPointer<vtkRenderWindow>::New();
-    window->AddRenderer(renderer);          
+    window->AddRenderer(renderer);  
+            
     auto intereactor = vtkSmartPointer<vtkRenderWindowInteractor>::New();
     intereactor->SetRenderWindow(window);
 
