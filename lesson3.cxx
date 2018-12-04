@@ -1,4 +1,9 @@
 // Based in code presented at https://www.vtk.org/Wiki/VTK/Tutorials/TriangleGeometryVertices
+
+// This is an improved version of the previous program. This uses the same 
+// points used for the previous example, but it uses a filter to draw a cube on 
+// each point and make it easy to view.
+
 #include <vtkActor.h>
 #include <vtkCellArray.h>
 #include <vtkCubeSource.h>

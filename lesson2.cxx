@@ -1,4 +1,8 @@
 // Based in code presented at https://www.vtk.org/Wiki/VTK/Tutorials/TriangleGeometryVertices
+
+// This program will draw three points (triangle corners) on screen. They are
+// really tiny.
+
 #include <vtkActor.h>
 #include <vtkCellArray.h>
 #include <vtkPoints.h>

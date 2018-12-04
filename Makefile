@@ -1,7 +1,13 @@
 CPP = clang++
-VTKVER = 8.1
+ifdef VTKVER
+	VTKVER := $(VTKVER)
+else
+	VTKVER := 8.1
+endif
+
 INCDIR = -I $(VTKDIR)/include/vtk-$(VTKVER)
 LIBDIR = -L $(VTKDIR)/lib
+
 VTKLIB = \
 -l vtksys-$(VTKVER) \
 -l vtkCommonCore-$(VTKVER) \
